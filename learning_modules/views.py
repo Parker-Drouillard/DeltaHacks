@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'learning_modules/base.html')
+    return render(request, 'learning_modules/index.html')
 
 
 def learning(request):
@@ -13,4 +13,4 @@ def compare(request):
 
 
 def add_compare_info(request):
-    pass
+    

@@ -4,8 +4,8 @@ def index(request):
     return render(request, 'learning_modules/base.html')
 
 
-def learn(request):
-    return render(request, 'learning_modules/learn.html')
+def learning(request):
+    return render(request, 'learning_modules/learning.html')
 
 
 def compare(request):

@@ -7,8 +7,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
  
-        <link href="CSS/style.css" rel="stylesheet">
-        <script type="text/javascript" src="JS/main.js"></script>
+        {% load static %}
+        <link href="{% static "CSS/style.css" %}" rel="stylesheet">
+        <script type="{% static "text/javascript" %}" src="JS/main.js"></script>
 
  
     </head>
@@ -32,7 +33,7 @@
 
         <div class="contentWrapper" style="margin-top: 25vh;">
             <div class="logo">
-                <img src="assets/logo copy.svg" alt="Logo" id="hexLogo">
+                <img src="{% static "assets/logo copy.svg" %}" alt="Logo" id="hexLogo">
             </div>
             <div class="title">
                 INVESTR

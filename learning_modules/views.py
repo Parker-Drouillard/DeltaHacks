@@ -9,5 +9,5 @@ def learning(request):
 def compare(request):
     return render(request, 'learning_modules/compare.html')
 
-def add_compare_input(request):
+def add_compare_info(request):
     pass

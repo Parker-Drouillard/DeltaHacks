@@ -1,0 +1,44 @@
+{% extends "learning_modules/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<input id="ticker_search" type="text" name="ticker_search" value="" placeholder="Company Keywords">
+
+<!-- JQUERY -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+  API_KEYS = ['5GK5XWN6LDQ8DUED', 'VZAFU2W6ALPW03M0', '0R2SZVDVHYQH7TPJ', 'QW5X3INYRED5X60P', 'X51MFOLMKFFGIQ05']
+  i = 0
+
+  Http = new XMLHttpRequest();
+
+  $('#ticker_search').on('keyup', function() {
+     if (this.value.length > -1) {
+       if (i == 4){
+         i = 0
+       }
+       i += 1
+       url = `https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${this.value}&apikey=${API_KEYS[i]}`;
+       Http.open("GET", url);
+       Http.send();
+       Http.onreadystatechange=(e)=>{
+         for (i = 0; i < JSON.parse(Http.responseText)['bestMatches'].length; i++){
+          console.log(JSON.parse(Http.responseText)['bestMatches'])
+         }
+       }
+     }
+  });
+
+
+
+
+</script>
+
+{% endblock %}

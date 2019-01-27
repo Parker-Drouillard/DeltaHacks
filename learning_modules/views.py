@@ -9,6 +9,5 @@ def learning(request):
 def compare(request):
     return render(request, 'learning_modules/compare.html')
 
-def add_compare_info(request):
-    tickers = []
-    pass
+def compare_info_form(request):
+    return render(request, 'learning_modules/compare_info.html')

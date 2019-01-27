@@ -10,3 +10,11 @@ window.onscroll = function (e) {
     var your_div = document.getElementById('whiteout');
     your_div.top = (vertical_position + 200) + 'px';//200 is arbitrary.. just to show you could now position it how you want
   }
+
+
+window.onload = function(){
+  var loadingScreen = document.getElementById("loadingScreen");
+  if(loadingScreen){
+    loadingScreen.style.display = "none";
+  }
+}

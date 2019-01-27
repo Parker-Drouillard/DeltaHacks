@@ -13,4 +13,4 @@ def compare(request):
 
 
 def add_compare_info(request):
-    
+    tickers = []

@@ -10,11 +10,11 @@
 
         <link href="static/CSS/style.css" rel="stylesheet">
         <script type="text/javascript" src="static/JS/main.js"></script>
+
+
     </head>
 
     <body>
-        <!-- <div id="loadScreen"></div> -->
-
         <div style="position: fixed; top: 0; width: 100%; height: 50%; transform:rotate(180deg);">
             <div class="waveWrapper waveAnimation">
                 <div class="waveWrapperInner bgTop">
@@ -27,10 +27,21 @@
                     <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
                 </div>
             </div>
-        </div>
-        {% block content %}
+      </div>
 
-        {% endblock %}
+
+
+        <div class="contentWrapper" style="margin-top: 25vh;">
+
+              {% block content %}
+
+              {% endblock %}
+
+
+        </div>
+        <div id="whiteout">
+
+        </div>
 
     </body>
 </html>

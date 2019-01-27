@@ -10,5 +10,6 @@ urlpatterns = [
     path('learning/', views.learning, name = 'learning')
     path('compare/', views.compare, name = 'compare'),
     path('connect/', views.connect, name = 'connect'),
+    path('compare-info/', views.add_compare_info, name='add_compare_info')
 
 ]

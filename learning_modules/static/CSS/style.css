@@ -3,7 +3,20 @@ body{
     white-space: nowrap;
 }
 
+#loadScreen{
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 98;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
 
+.loadScreen.hide{
+    background-color: rgba(0,0,0,0.2);
+}
 
 #headerGraphicWrapper{
     position: absolute;
@@ -19,7 +32,7 @@ body{
     background-color: #fff;
     position: relative;
     left: 22.5%;
-    top: 15%;
+    /* top: 10%; */
     -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
@@ -30,7 +43,7 @@ body{
     padding-bottom: 11vh;
 
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 15vh;
     margin-bottom: 20px;
 }
 
@@ -38,6 +51,7 @@ body{
     height: 25vh;
     width: 25vh;
     margin-bottom: 2vh;
+    z-index: 99;
 }
 
 .title{

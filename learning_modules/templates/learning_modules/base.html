@@ -27,36 +27,10 @@
                     <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
                 </div>
             </div>
-      </div>
-
-
-
-        <div class="contentWrapper">
-            <div class="logo">
-
-                <img src="{% static "assets/logo copy.svg" %}" alt="Logo" id="hexLogo">
-
-            </div>
-            <div class="title">
-                INVESTR
-            </div>
-            <div class="subTitle">
-                Made Easy.
-            </div>
-            <div class="buttonRow">
-                <a class="btn btn-success btn-lg navButton" href="{% url 'learning_modules:learning' %}" style="color: white;">LEARN</a>
-                <a class="btn btn-success btn-lg navButton" href="compare.html">COMPARE</a>
-                <a class="btn btn-success btn-lg navButton" href="connect.html">CONNECT</a>
-                <a class="btn btn-success btn-lg navButton" href="{% url "learning_modules:learn" %}" style="color: white;">LEARN</a>
-                <a class="btn btn-success btn-lg navButton" href="{% url "gitcompare.html" %}">COMPARE</a>
-                <a class="btn btn-success btn-lg navButton" href="{% url "connect.html" %}">CONNECT</a>
-
-            </div>
         </div>
-        <div id="whiteout">
-          {% block content %}
-          {% endblock %}
-        </div>
+        {% block content %}
+
+        {% endblock %}
 
     </body>
 </html>

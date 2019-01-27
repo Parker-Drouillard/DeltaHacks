@@ -6,3 +6,9 @@ def base(request):
 
 def learn(request):
     return render(request, 'learning_modules/learn.html')
+
+def compare(request):
+    return render(request, 'learning_modules/compare.html')
+
+def compare(request):
+    return render(request, 'learning_modules/connect.html')
